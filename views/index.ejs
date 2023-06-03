@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 小工具</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="body">
+  <form action="/" method="post">
+    <div class="card">
+      <img
+        src="https://i.imgur.com/ggsMjPT.jpg"
+        alt="nurse_logo" class="card-img" style="width: 300px; height: 300px;">
+      <h1 class="card-title">健康小護士</h1>
+      <p class="card-text">
+        <% if (description.length) { %>
+          <%= description %>
+        <% } else { %>
+          請問您想詢問什麼問題呢？我來幫您！
+        <% } %>
+      </p>
+      <input type="text" name="description" class="card-input" placeholder="詢問健康小常識提示文字" />
+      <button type="submit" class="card-btn">送出</button>
+    </div>
+  </form>
+</body>
+
+</html>
